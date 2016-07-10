@@ -1,0 +1,20 @@
+<div id="floating-panel">
+
+    <b>Rutas para recomendar: </b>
+    <select id="end">
+      <option ng-repeat="rutau in rutasUser" value="{{rutau.ruta.idRuta}}">{{rutau.ruta.nombreRuta}}</option>
+    </select>
+    </div>
+
+
+    <b>Usuarios para recomendar: </b>
+    <select id="user">
+      <option ng-repeat="usuario in usuarios" value="{{usuario.idusuario}}">{{usuario.nombre}}</option>
+    </select>
+    </div>
+
+    <div >
+        <button ng-click="recomendar()" type="submit"  class="btn btn-primary btn-block ">
+        Recomendar Ruta
+        </button>
+    </div>

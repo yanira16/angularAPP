@@ -1,0 +1,37 @@
+<br></br>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title" align="center"> Estacionamiento</h3>
+  </div>
+  <table class="table">
+    <thead class="btn-primary">
+          <tr>
+            <th class="text-center">Nombre de Estacionamiento</th>
+            <th class="text-center">Capacidad</th>
+            <th class="text-center">Ocupados</th>  
+          </tr>
+        </thead>
+        <tbody class = "btn-default">
+          <tr>
+            <td class="text-center">{{estacionamiento.nombreEstacionamiento}}</td>
+            <td class="text-center">{{estacionamiento.capacidad}}</td>
+            <td class="text-center">{{estacionamiento.ocupados}} </td>
+          </tr>
+          
+        </tbody>
+  </table>
+</div>
+
+<div>
+  <form name="form" ng-submit="actualizarDisponibles()" role="form">
+    <button ng-click="estacionar()" type="submit"  class="btn btn-success btn-block btn--l btn--raised">Estacionar</button>
+    </div>
+
+  </form>
+
+    <form name="form" ng-submit="actualizarDisponibles()" role="form">
+    <button ng-click="desocupar()" type="submit"  class="btn btn-danger btn-block btn--l btn--raised">Desocupar</button>
+    </div>
+
+  </form>
+</div>

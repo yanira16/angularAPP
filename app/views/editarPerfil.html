@@ -1,0 +1,60 @@
+<div class="col-xs-3"></div>
+<div class="col-xs-6">
+	
+	<div class=" pull-left", style="margin: 20px; border:solid 2px ;padding: 20px !important; background: #D3D3D3;">
+	<h4 align="center"><b>Editar Perfil</b></h4>
+	<div ng-app="angularSpa" ng-controller="editarPerfilCtrl">
+		
+		<form name="form" ng-submit="editarUsuario()" role="form">
+		<div class="pull-left">
+			<div flex-container="row">
+				<div flex-item>
+				<br /><label for="nickname">Nickname:  </label>{{usuario.nickname}}<br />	
+				</div>	
+			</div>
+			<div flex-container="row">
+				<div flex-item>
+				<br /><br><label for="password">Password:  </label>{{usuario.password}}<br />
+				<input type="password" ng-model="form.password" required>
+				<h1>{{password.form.password.$valid}}</h1>
+				</lx-password-field>	
+				</div>	
+			</div>
+			<div flex-container="row">
+				<div flex-item>
+				<br /><label for="email">Email:  </label>{{usuario.email}}<br />
+				<input type="email" ng-model="form.email" required placeholder="ejemplo@email.cl">
+				<h1>{{email.form.email.$valid}}</h1>
+				</lx-email-field>	
+				</div>	
+			</div>
+			<div flex-container="row">
+				<div flex-item>
+				<br /><label for="direccion">Dirección:  </label>{{usuario.direccion}}<br />
+				<input type="text" ng-model="form.direccion" required>
+				<h1>{{direccion.form.direccion.$valid}}</h1>
+				</lx-text-field>	
+				</div>	
+			</div>
+			<div flex-container="row">
+				<div flex-item>
+				<br /><label for="telefono">Teléfono:  </label>{{usuario.telefono}}<br />
+				<input type="tel" ng-model="form.telefono" pattern="^\d{3} \d{8}$" placeholder="569 12345678" required>
+				</lx-text-field>	
+				</div>	
+			</div>
+
+		</div>
+			<div class="clearfix"></div>
+			</br>
+			</br>
+	 		<div >
+				<button ng-click="editarUsuario()" type="submit"  class="btn btn-primary btn-block ">
+				Guardar
+				</button>
+			</div>
+			</div>
+		</form>	
+	</div>
+	</div>
+</div>

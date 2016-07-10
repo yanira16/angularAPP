@@ -1,0 +1,12 @@
+<div id="floating-panel">
+    <b>Inicio: </b>
+    <div id="entrada">
+      <input id="start" type="textbox" value="Arica, Santiago">
+    </div>
+    <b>Fin: </b>
+    <select id="end">
+      <option ng-repeat="entrada in entradas" value="{{entrada.ubi_xEntrada}}, {{entrada.ubi_yEntrada}}">{{entrada.nombreEntrada}}</option>
+    </select>
+    </div>
+    <div id="map"></div>
+    
